@@ -46,7 +46,7 @@ public class OrderPage {
     public void waitForReplan() {
         replanNotification
                 .shouldBe(Condition.visible, Duration.ofSeconds(15))
-                .shouldHave(Condition.text("У вас уже запланирована встреча на другую дату. Перепланировать?"), Duration.ofSeconds(15));
+                .shouldHave(Condition.text("ЭТОГО ТЕКСТА НЕТ"), Duration.ofSeconds(15));
     }
 
     public void clickReplan() {
