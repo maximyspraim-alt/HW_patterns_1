@@ -24,8 +24,6 @@ class OrderReplanTest {
         OrderData firstOrder = DataGenerator.generateOrder(3);
         OrderData secondOrder = DataGenerator.generateOrder(7);
 
-        System.out.println("First date: " + firstOrder.getDate());
-        System.out.println("Second date: " + secondOrder.getDate());
 
         // Первая отправка — успешное планирование
         orderPage.fillForm(firstOrder);
